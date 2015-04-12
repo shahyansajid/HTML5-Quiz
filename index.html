@@ -1,0 +1,151 @@
+<!DOCTYPE html> 
+    <html>
+        <head>
+            <meta charset="utf-8">
+            <title>Interop - IA Quiz</title>
+            <!--link rel="stylesheet" href="css/shahyanstheme2.css" /-->
+            <link rel="stylesheet" href="css/shahyanstheme2.min.css" />
+            <link href="css/jquery.mobile.structure-1.0.min.css" rel="stylesheet" type="text/css"/>
+        </head> 
+        <body> 
+
+            <div data-role="page" id="page">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a" id="begin">
+                    <img src="images/ialogo.png" alt="logo" id="logo" height="25%" width="25%" />
+                    <a href="#page2" class="ui-btn" id="beginbutt">
+                        <button class="ui-btn">Begin Quiz</button>
+                    </a>
+                </div>
+                <div data-role="footer" data-theme="a">
+                </div>
+            </div>
+
+            <div data-role="page" id="page2">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a" id="page2_wrapper">
+                <h1>HTML5認定試験 模擬問題アプリ</h1>
+                    
+            <!--Question 1
+            <div data-role="controlgroup" name="quiz" id="question1">
+                    <p>Question 1: &#60;input&#62; タグのtype属性の値として使えないものを1つ選びなさい。</p>
+                    <input name="checkbox1" id="checkbox1a" type="checkbox" value="1" class="answer">
+                    <label for="checkbox1a">file</label>
+                    <input name="checkbox1" id="checkbox1b" type="checkbox" value="2" class="answer">
+                    <label for="checkbox1b">password</label>
+                    <input name="checkbox1" id="checkbox1c" type="checkbox" value="3" class="answer">
+                    <label for="checkbox1c">tel</label>
+                    <input name="checkbox1" id="checkbox1d" type="checkbox" value="4" class="answer">
+                    <label for="checkbox1d" id="correct1">required</label>
+                    <input name="checkbox1" id="checkbox1e" type="checkbox" value="5" class="answer">
+                    <label for="checkbox1e">hidden</label>
+            </div>
+                -->
+                <a href="javascript:void(0)" class="ui-btn" id="submit" onclick="result()"><button class="ui-btn">Submit</button></a>
+                    <a href="javascript:void(0)" class="ui-btn" id="return" onclick="back()">
+                        <button class="ui-btn">Return to Start</button>
+                    </a>
+                </div>
+
+            </div>
+            <!--
+            <a href="#page3" class="ui-btn"><button class="ui-btn">Next Question</button></a>
+                </div>
+                <div data-role="footer">
+                </div>
+            </div>
+            <div data-role="page" id="page3">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">	        
+
+            <fieldset data-role="controlgroup">
+                <legend>Choose a pet:</legend>
+                    <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" checked="checked" />
+                    <label for="radio-choice-1">Cat</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2"  />
+                    <label for="radio-choice-2">Dog</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3"  />
+                    <label for="radio-choice-3">Hamster</label>
+
+                    <input type="radio" name="radio-choice" id="radio-choice-4" value="choice-4"  />
+                    <label for="radio-choice-4">Lizard</label>
+            </fieldset>
+
+            <a href="#page3" class="ui-btn"><button class="ui-btn">Next Question</button></a>
+                </div>
+                <div data-role="footer">
+                </div>
+            </div>
+
+            <div data-role="page" id="page4">
+                <div data-role="header">
+                    <h1>ページ 4</h1>
+                </div>
+                <div data-role="content">	
+                    コンテンツ
+                </div>
+                <div data-role="footer">
+                    <h4>ページフッター</h4>
+                </div>
+            </div>
+
+            -->
+
+            <div data-role="page" id="result0">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">	
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <div data-role="page" id="result1">
+                <div data-role="header" data-theme="a"></div>
+                <div data-role="content" data-theme="a">
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <div data-role="page" id="result2">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <div data-role="page" id="result3">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">	
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <div data-role="page" id="result4">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">	
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <div data-role="page" id="result5">
+                <div data-role="header" data-theme="a">
+                </div>
+                <div data-role="content" data-theme="a">
+                    <a href="#page2"><div class="pagewrap"></div></a>
+                </div>
+            </div>
+
+            <script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+            <!-- A SHAHYAN SAJID (Harvard Class of 2015) PRODUCTION-->
+            <script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+            <script src="js/app.js" type="text/javascript"></script>
+        </body>
+    </html>
